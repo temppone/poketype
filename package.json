@@ -9,7 +9,7 @@
         "lint": "eslint --max-warnings=0"
     },
     "lint-staged": {
-        "*.{js,jsx}": "npm run lint --fix"
+        "*.{js,jsx}": "npm run lint . --fix"
     },
     "dependencies": {
         "eslint-config-prettier": "^8.5.0",
