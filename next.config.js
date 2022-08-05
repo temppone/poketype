@@ -1,7 +1,10 @@
+/* eslint-disable no-undef */
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    reactStrictMode: true,
-    swcMinify: true,
-};
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withLess = require('next-with-less');
 
-module.exports = nextConfig;
+// eslint-disable-next-line no-undef
+module.exports = withLess({
+    reactStrictMode: true,
+    lessLoaderOptions: {},
+});
